@@ -78,6 +78,7 @@ namespace Zadachi.Pages
             await _context.SaveChangesAsync();
             _logger.LogInformation($"User {_Activity.User?.UserName} updated activity {_Activity.Name} at {DateTime.Now.ToString()}");     
             return RedirectToPage("Index");
+            //tets git
         }
     }
 }
