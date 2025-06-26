@@ -1,0 +1,21 @@
+﻿@page
+@model Zadachi.Pages.EditActivityModel
+<h2>Edit activity</h2>
+<form method="post" enctype="multipart/form-data">
+    <input name="id" value="@Model._Activity?.Id" type="hidden" />
+    <p>
+        <label>Name</label><br />
+        <input name="name" value="@Model._Activity?.Name" /><br />
+        <input asp-for="_IsCompleted" />
+        <label>Completed</label><br />
+        <div class="form-group">
+            <label asp-for="_ActivityFile" class="control-label"></label>
+            @if (Model._ActivityFile!=null)
+            {
+                <label>@Model._ActivityFile.FileName</label>
+            }
+            <input asp-for="_ActivityFile" class="form-control" accept=".txt"/>
+        </div>
+    </p>
+    <input type="submit" value="Save" />
+</form>

@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+<h2>List of activities</h2>
+<p><a href="/EditActivity">Add an activity</a></p>
+<p>
+    <form method="post" asp-page-handler="Completed">
+        <select name="OptionCompleted" asp-for="@Model.OptionCompleted" asp-items="Model.OptionsCompleted" onchange="this.form.submit();"></select>
+    </form>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Del</th>
+            <th>Edit</th>
+            <th><a asp-page="Index" asp-route-sortOrder="@Model.NameSort">@Html.DisplayNameFor(m => m.Activities[0].Name)</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var activity in Model.Activities)
+        {
+            <tr>
+                <td>
+                    <form method="post" asp-page="Index" asp-page-handler="Remove" style="display: inline">
+                    <input type="hidden" name="Id" value="@activity.Id" />
+                    <input type="image" src="~/images/icon_delete.png" height="24px" width="24px" />
+                    <button type="submit" class="btn btn-link"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-page="Index" asp-page-handler="Edit" style="display: inline">
+                    <input type="hidden" name="Id" value="@activity.Id" />
+                    <input type="image" src="~/images/icon_edit.png" height="24px" width="24px" />
+                    <button type="submit" class="btn btn-link"></button>
+                    </form>
+                </td>               
+                <td>@Html.DisplayFor(m => activity.Name)</td>
+                <td>@Html.DisplayFor(m => activity.IsCompleted)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@{
+    var prevDisabled = !Model.Activities.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Activities.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Activities.PageIndex - 1)"
+   class="btn btn-primary @prevDisabled">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Activities.PageIndex + 1)"
+   class="btn btn-primary @nextDisabled">
+    Next
+</a>

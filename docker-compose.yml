@@ -1,0 +1,10 @@
+services:
+  zadachi:
+    image: ${DOCKER_REGISTRY-}zadachi
+    build:
+      context: .
+      dockerfile: Zadachi/Dockerfile
+  redis:
+    image: redis
+    ports:
+    - "6379:6379"
