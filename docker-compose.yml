@@ -4,6 +4,13 @@ services:
     build:
       context: .
       dockerfile: Zadachi/Dockerfile
+    volumes:
+      - ~/docker-secrets/tg_bot_token:/run/secrets/tg_bot_token:ro
+      - ~/docker-secrets/tg_chat_id:/run/secrets/tg_chat_id:ro
+    environment:
+      - TelegramSettings__BotToken_FILE=/run/secrets/tg_bot_token
+      - TelegramSettings__ChatId_FILE=/run/secrets/tg_chat_id
+    restart: unless-stopped
   redis:
     image: redis
     ports:

@@ -10,10 +10,11 @@
         <label>Completed</label><br />
         <div class="form-group">
             <label asp-for="_ActivityFile" class="control-label"></label>
-            @if (Model._ActivityFile!=null)
+            @if (Model._Activity!=null)
             {
-                <label>@Model._ActivityFile.FileName</label>
+                <label>@Model._Activity.ActivityFile</label>
             }
+
             <input asp-for="_ActivityFile" class="form-control" accept=".txt"/>
         </div>
     </p>

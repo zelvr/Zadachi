@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Zadachi.Lib;
+using Zadachi.Lib.Database;
 using Zadachi.Models;
 
 namespace Zadachi.Pages
@@ -11,9 +12,9 @@ namespace Zadachi.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly ZadachiDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IDatabaseService<Activity> _db;
         public string NameSort { get; set; }
         [BindProperty]
         public string OptionCompleted { get; set; }
@@ -21,12 +22,12 @@ namespace Zadachi.Pages
         public List<SelectListItem> OptionsCompleted { get; set; }
         public PaginatedList<Activity> Activities { get; private set; }
 
-        public IndexModel(ILogger<IndexModel> logger, ZadachiDbContext dbContext, IConfiguration configuration, UserManager<IdentityUser> user)
+        public IndexModel(ILogger<IndexModel> logger, IConfiguration configuration, UserManager<IdentityUser> user, IDatabaseService<Activity> db)
         {
             _logger = logger;
-            _context = dbContext;
             _configuration = configuration;
             _userManager = user;
+            _db = db;
         }
 
         public async void OnGetAsync(string sortOrder, int? pageIndex, string optionCompleted)
@@ -35,7 +36,7 @@ namespace Zadachi.Pages
             OptionCompleted = optionCompleted == null ? "Active" : optionCompleted;
             List<string> optionsCompletedText = new List<string> { "Active", "All", "Completed" };
             OptionsCompleted = optionsCompletedText.Select(x => new SelectListItem { Text = x, Value = x }).ToList();
-            IQueryable<Activity> activities = from a in _context.Activities select a;
+            IQueryable<Activity> activities = _db.Query();
             IdentityUser? userCurrent = await _userManager.GetUserAsync(User);
             activities = activities.Where(a => a.User == userCurrent);
             switch (OptionCompleted)
@@ -57,17 +58,13 @@ namespace Zadachi.Pages
                     break;
             }
             var pageSize = _configuration.GetValue("PageSize", 4);
-            Activities = await PaginatedList<Activity>.CreateAsync(activities.AsNoTracking(), pageIndex ?? 1, pageSize);
+            Activities = await PaginatedList<Activity>.CreateAsync(activities, pageIndex ?? 1, pageSize);
         }
 
         public async Task<IActionResult> OnPostRemoveAsync(int id)
         {
-            var activity = await _context.Activities.FindAsync(id);
-            if (activity != null)
-            {
-                _context.Activities.Remove(activity);
-                await _context.SaveChangesAsync();
-            }
+            var activity = await _db.GetByIdAsync(id);            
+            await _db.DeleteAsync(activity);            
             return RedirectToPage("Index");
         }
 

@@ -1924,3 +1924,1481 @@ SELECT COUNT(*)
 FROM "Activities" AS "a"
 LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
 WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {45ed69c7-0bc4-4fdd-a10d-a6c6f2d6a5e8} may be persisted to storage in unencrypted form.
+Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {25d3b9ea-d501-4307-8e02-697537d573ef} may be persisted to storage in unencrypted form.
+Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (2ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+An exception was thrown while deserializing the token.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+An unhandled exception has occurred while executing the request.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {cbfca16f-6cf1-4317-a0f0-2822aca3666a} may be persisted to storage in unencrypted form.
+Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {ffda1996-665d-455d-bfb5-fa46bff30b4c} may be persisted to storage in unencrypted form.
+Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {245d09ce-2e1a-4e57-8a5e-33ac502d51b3} may be persisted to storage in unencrypted form.
+Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {8c10c1d1-d670-4aec-be35-092e5a4e107a} may be persisted to storage in unencrypted form.
+Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+Executed DbCommand (1,032ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {71d2e42c-7e4e-455b-86e0-516c5719bd47} may be persisted to storage in unencrypted form.
+Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (2ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+An unhandled exception has occurred while executing the request.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {7bcd9629-059e-428e-9897-9b2655a3b128} may be persisted to storage in unencrypted form.
+Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (2ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {43d87606-f802-4186-820a-24701e46ffaf} may be persisted to storage in unencrypted form.
+Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "Activities"
+WHERE "Id" = @p0
+RETURNING 1;
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?' (DbType = Boolean), @p2='?' (Size = 6), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Activities" ("ActivityFile", "IsCompleted", "Name", "UserId")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+User  updated activity kjhdsg at 07/03/2025 15:22:35
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_1 OFFSET @__p_1
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (1ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {2612c7f0-e46f-410f-90f6-85b84e8e55c0} may be persisted to storage in unencrypted form.
+Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+An unhandled exception has occurred while executing the request.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+An unhandled exception has occurred while executing the request.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {5668001e-cc5c-4a79-a6d9-c9b2bf1637d6} may be persisted to storage in unencrypted form.
+Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+An unhandled exception has occurred while executing the request.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {a0c1cfd8-a517-4bb3-bb6e-c25653f433e1} may be persisted to storage in unencrypted form.
+Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?', @p1='?' (DbType = Boolean), @p2='?' (Size = 8)], CommandType='Text', CommandTimeout='30']
+UPDATE "Activities" SET "ActivityFile" = @p0, "IsCompleted" = @p1, "Name" = @p2
+WHERE "Id" = @p3
+RETURNING 1;
+User  updated activity kjhdsghj at 07/03/2025 15:58:42
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {f540227f-d84e-4d1b-8181-537e0c860c03} may be persisted to storage in unencrypted form.
+Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+File uploaded: /app/wwwroot/files/activityfiles/Текстовый документ_07062025 15:53:56.txt
+Executed DbCommand (0ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 40), @p1='?' (DbType = Boolean), @p2='?' (Size = 8)], CommandType='Text', CommandTimeout='30']
+UPDATE "Activities" SET "ActivityFile" = @p0, "IsCompleted" = @p1, "Name" = @p2
+WHERE "Id" = @p3
+RETURNING 1;
+User  updated activity kjhdsghj at 07/06/2025 15:53:56
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {0de59125-cfff-4070-bd37-98691e7dc012} may be persisted to storage in unencrypted form.
+Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (2ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {35b307af-93f4-4624-a8a4-36e02fd1c704} may be persisted to storage in unencrypted form.
+Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {2f7f8d2c-68b3-4c2a-8c65-63a8e2ffec72} may be persisted to storage in unencrypted form.
+Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {52c8491d-2871-4635-bf35-be993448149c} may be persisted to storage in unencrypted form.
+Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Using an in-memory repository. Keys will not be persisted to storage.
+Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+No XML encryptor configured. Key {1be89137-6ebb-4f3c-95d8-14f9ffa5876e} may be persisted to storage in unencrypted form.
+Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (3ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Now listening on: http://[::]:8080
+Now listening on: https://[::]:8081
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /app
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (1ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+An exception was thrown while deserializing the token.
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+WHERE "a"."Id" = @__p_0
+LIMIT 1
+Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?', @p1='?' (DbType = Boolean), @p2='?' (Size = 8)], CommandType='Text', CommandTimeout='30']
+UPDATE "Activities" SET "ActivityFile" = @p0, "IsCompleted" = @p1, "Name" = @p2
+WHERE "Id" = @p3
+RETURNING 1;
+User  updated activity kjhdsghj at 07/13/2025 14:29:34
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+Executed DbCommand (0ms) [Parameters=[@__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ActivityFile", "a"."IsCompleted", "a"."Name", "a"."UserId"
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND NOT ("a"."IsCompleted")
+ORDER BY "a"."Name"
+LIMIT @__p_2 OFFSET @__p_1
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" IS NULL AND "a"."IsCompleted"
+Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+Executed DbCommand (0ms) [Parameters=[@__entity_equality_user_0_Id='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Activities" AS "a"
+LEFT JOIN "AspNetUsers" AS "a0" ON "a"."UserId" = "a0"."Id"
+WHERE "a0"."Id" = @__entity_equality_user_0_Id AND "a"."IsCompleted"

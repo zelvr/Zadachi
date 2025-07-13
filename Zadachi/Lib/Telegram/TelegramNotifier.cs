@@ -6,11 +6,27 @@ public class TelegramNotifier
 {
     private readonly TelegramSettings _settings;
 
-    public TelegramNotifier(IOptions<TelegramSettings> options)
+    public TelegramNotifier(IConfiguration config)
     {
-        _settings = options.Value;
+        _settings = new TelegramSettings
+        {            
+            BotToken = ReadSecret(config, "TelegramSettings:BotToken"),
+            ChatId = long.Parse(ReadSecret(config, "TelegramSettings:ChatId"))
+        };
 
-        // Валидация настроек
+        ValidateSettings();
+    }
+
+    private string ReadSecret(IConfiguration config, string key)
+    {
+        var filePath = config[$"{key}_FILE"];
+        return File.Exists(filePath)
+            ? File.ReadAllText(filePath).Trim()
+            : config[key];
+    }
+
+    private void ValidateSettings()
+    {
         if (string.IsNullOrEmpty(_settings.BotToken))
             throw new ArgumentNullException(nameof(_settings.BotToken));
 

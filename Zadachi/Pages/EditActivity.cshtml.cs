@@ -4,15 +4,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using Zadachi.Lib.Database;
+using Zadachi.Lib.FileService;
 using Zadachi.Models;
 
 namespace Zadachi.Pages
 {
     public class EditActivityModel : PageModel
     {
-        private readonly ZadachiDbContext _context;
+        private readonly IDatabaseService<Activity> _db;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IWebHostEnvironment _environment;
+        private readonly IFileService _fileService;
         private readonly ILogger<EditActivityModel> _logger;
         private readonly TelegramNotifier _notifier;
         private bool _New;
@@ -23,11 +25,11 @@ namespace Zadachi.Pages
         [BindProperty, Display(Name = "Activity File")]
         public IFormFile _ActivityFile { get; set; }
 
-        public EditActivityModel(ZadachiDbContext db, UserManager<IdentityUser> userManager, IWebHostEnvironment environment, ILogger<EditActivityModel> logger, TelegramNotifier notifier)
+        public EditActivityModel(IDatabaseService<Activity> db, UserManager<IdentityUser> userManager, IFileService fileservice, ILogger<EditActivityModel> logger, TelegramNotifier notifier)
         {
-            _context = db;
+            _db = db;
             _userManager = userManager;
-            _environment = environment;
+            _fileService = fileservice;
             _logger = logger;
             _notifier = notifier;
         }
@@ -36,21 +38,11 @@ namespace Zadachi.Pages
             _New = id == 0;
             if (_New)
                 _Activity = new();
-            else            
-                _Activity = await _context.Activities.FindAsync(id);      
+            else
+                _Activity = await _db.GetByIdAsync(id);      
             
             _IsCompleted = _Activity.IsCompleted;
-
-            if (_Activity.ActivityFile != null)
-            {
-
-                var activityFile = Path.Combine(_environment.WebRootPath, "files", "activityfiles", _Activity.ActivityFile);
-                using (var stream = System.IO.File.OpenRead(activityFile))
-                {
-                    _ActivityFile = new FormFile(stream, 0, stream.Length, null, Path.GetFileName(stream.Name));
-                }
-            }
-
+            
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()
@@ -64,21 +56,16 @@ namespace Zadachi.Pages
             }
             _Activity.IsCompleted = _IsCompleted;
             if (_ActivityFile!=null)
-            {
-                string activityFileName = $"{_ActivityFile.FileName.Replace(".txt","")}_{DateTime.Now.ToString().Replace("/","")}.txt";
-                _Activity.ActivityFile = activityFileName;            
-                var activityFile = Path.Combine(_environment.WebRootPath, "files", "activityfiles", activityFileName);
-                using var fileStream = new FileStream(activityFile, FileMode.Create);
-                await _ActivityFile.CopyToAsync(fileStream);
+            {                
+                var activityFilePath = Path.Combine("files", "activityfiles");
+                _Activity.ActivityFile = await _fileService.UploadFileAsync(_ActivityFile, activityFilePath);
             }
             if (_New)
-                    _context.Activities.AddAsync(_Activity);
+                await _db.AddAsync(_Activity);
                 else
-                    _context.Activities.Update(_Activity);
-            await _context.SaveChangesAsync();
+                    await _db.UpdateAsync(_Activity);
             _logger.LogInformation($"User {_Activity.User?.UserName} updated activity {_Activity.Name} at {DateTime.Now.ToString()}");     
             return RedirectToPage("Index");
-            //tets git
         }
     }
 }

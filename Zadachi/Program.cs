@@ -5,21 +5,20 @@ using Prometheus;
 using Prometheus.SystemMetrics;
 using Zadachi;
 using Zadachi.Lib;
+using Zadachi.Lib.Database;
+using Zadachi.Lib.FileService;
 using Zadachi.Lib.Logging;
 using Zadachi.Lib.Telegram;
 using Zadachi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
 var connString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ZadachiDbContext>(options => options.UseSqlite(connString));
-builder.Services.AddStackExchangeRedisCache(options => {
-    options.Configuration = builder.Configuration.GetConnectionString("Redis");
-    options.InstanceName = "local";
-});
+
+builder.Services.AddScoped(typeof(IDatabaseService<>), typeof(DatabaseService<>));
+builder.Services.AddScoped(typeof(IFileService), typeof(FileService));
+
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
@@ -30,13 +29,19 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.Password.RequiredLength = 1;
     options.Password.RequiredUniqueChars = 1;
 }).AddEntityFrameworkStores<ZadachiDbContext>();
+
 builder.Services.AddSingleton<UserStatistics>();
 builder.Services.AddHostedService<BackgroundStatistics>();
-builder.Services.Configure<TelegramSettings>(builder.Configuration.GetSection("TelegramSettings"));
+builder.Services.AddStackExchangeRedisCache(options => {
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    options.InstanceName = "local";
+});
+
+builder.Configuration.AddEnvironmentVariables();
 builder.Services.AddTransient<TelegramNotifier>();
+
 var environment = builder.Environment;
 builder.Logging.AddFile(Path.Combine(environment.WebRootPath, "files", "logging", "logs.txt"));
-
 builder.Services.AddSystemMetrics();
 
 var app = builder.Build();
