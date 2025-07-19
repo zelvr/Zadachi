@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Prometheus;
 using Prometheus.SystemMetrics;
+using Serilog;
 using Zadachi;
 using Zadachi.Lib;
 using Zadachi.Lib.Database;
@@ -40,8 +41,14 @@ builder.Services.AddStackExchangeRedisCache(options => {
 builder.Configuration.AddEnvironmentVariables();
 builder.Services.AddTransient<TelegramNotifier>();
 
-var environment = builder.Environment;
-builder.Logging.AddFile(Path.Combine(environment.WebRootPath, "files", "logging", "logs.txt"));
+//var environment = builder.Environment;
+//builder.Logging.AddFile(Path.Combine(environment.WebRootPath, "files", "logging", "logs.txt"));
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .CreateLogger();
+builder.Host.UseSerilog();
+
 builder.Services.AddSystemMetrics();
 
 var app = builder.Build();
