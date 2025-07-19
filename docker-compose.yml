@@ -7,6 +7,7 @@ services:
     volumes:
       - ~/docker-secrets/tg_bot_token:/run/secrets/tg_bot_token:ro
       - ~/docker-secrets/tg_chat_id:/run/secrets/tg_chat_id:ro
+      - ./:/app:rw
     environment:
       - TelegramSettings__BotToken_FILE=/run/secrets/tg_bot_token
       - TelegramSettings__ChatId_FILE=/run/secrets/tg_chat_id
